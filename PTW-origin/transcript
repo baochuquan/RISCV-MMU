@@ -1,0 +1,365 @@
+# Reading C:/modeltech64_10.0a/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.0a Feb 17 2011 
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {testbench01.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module target_ppn_generate_unit
+# 
+# Top level modules:
+# 	target_ppn_generate_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module RRArbiter
+# 
+# Top level modules:
+# 	RRArbiter
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module requestor_arb_wire_path
+# 
+# Top level modules:
+# 	requestor_arb_wire_path
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module replace_select_unit
+# 
+# Top level modules:
+# 	replace_select_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module plru_unit
+# 
+# Top level modules:
+# 	plru_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module permission_privilege_check_unit
+# 
+# Top level modules:
+# 	permission_privilege_check_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module no_leaf_pte_check_unit
+# 
+# Top level modules:
+# 	no_leaf_pte_check_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module mem_wire_path
+# 
+# Top level modules:
+# 	mem_wire_path
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module index_address_generate_unit
+# 
+# Top level modules:
+# 	index_address_generate_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module dpath_wire_path
+# 
+# Top level modules:
+# 	dpath_wire_path
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module cache_search_unit
+# 
+# Top level modules:
+# 	cache_search_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module cache_hit_judge_unit
+# 
+# Top level modules:
+# 	cache_hit_judge_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module access_dirty_check_unit
+# 
+# Top level modules:
+# 	access_dirty_check_unit
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module standard_PTW
+# 
+# Top level modules:
+# 	standard_PTW
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module PTW
+# 
+# Top level modules:
+# 	PTW
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module testbench01
+# 
+# Top level modules:
+# 	testbench01
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.testbench01 glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: testbench01.v(1041): (vopt-2685) [TFMPC] - Too few port connections for 'uutDUT'.  Expected 143, found 142.
+# ** Warning: testbench01.v(1041): (vopt-2718) [TFMPC] - Missing connection for port 'io_mem_ordered'.
+# ** Warning: testbench01.v(1185): (vopt-2685) [TFMPC] - Too few port connections for 'uutSTD'.  Expected 143, found 142.
+# ** Warning: testbench01.v(1185): (vopt-2718) [TFMPC] - Missing connection for port 'io_mem_ordered'.
+# Loading work.testbench01(fast)
+# Loading work.PTW(fast)
+# Loading work.RRArbiter(fast)
+# Loading work.dpath_wire_path(fast)
+# Loading work.requestor_arb_wire_path(fast)
+# Loading work.mem_wire_path(fast)
+# Loading work.no_leaf_pte_check_unit(fast)
+# Loading work.permission_privilege_check_unit(fast)
+# Loading work.target_ppn_generate_unit(fast)
+# Loading work.index_address_generate_unit(fast)
+# Loading work.cache_hit_judge_unit(fast)
+# Loading work.access_dirty_check_unit(fast)
+# Loading work.replace_select_unit(fast)
+# Loading work.plru_unit(fast)
+# Loading work.cache_search_unit(fast)
+# Loading work.standard_PTW(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) PTW.v(539): [PCDPC] - Port size (28 or 28) does not match connection size (27) for port 'r_req_addr'. The port definition is at: target_ppn_generate_unit.v(4).
+#         Region: /testbench01/uutDUT/m1_target_ppn
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# =====Test Begin=====
+# ==============compare_results=============
+# ---------------requestor-0----------------
+# io_requestor_0_req_ready  ##ERROR##
+#  
+# io_requestor_0_resp_valid  **RIGHT**
+# io_requestor_0_resp_bits_pte_reserved_for_hardware  ##ERROR##
+# io_requestor_0_resp_bits_pte_ppn  ##ERROR##
+# io_requestor_0_resp_bits_pte_reserved_for_software  ##ERROR##
+# io_requestor_0_resp_bits_pte_d  ##ERROR##
+# io_requestor_0_resp_bits_pte_a  ##ERROR##
+# io_requestor_0_resp_bits_pte_g  ##ERROR##
+# io_requestor_0_resp_bits_pte_u  ##ERROR##
+# io_requestor_0_resp_bits_pte_x  ##ERROR##
+# io_requestor_0_resp_bits_pte_w  ##ERROR##
+# io_requestor_0_resp_bits_pte_r  ##ERROR##
+# io_requestor_0_resp_bits_pte_v  ##ERROR##
+#  
+# io_requestor_0_ptbr_asid  **RIGHT**
+# io_requestor_0_ptbr_ppn  **RIGHT**
+# io_requestor_0_invalidate  **RIGHT**
+#  
+# io_requestor_0_status_debug  **RIGHT**
+# io_requestor_0_status_isa  **RIGHT**
+# io_requestor_0_status_prv  **RIGHT**
+# io_requestor_0_status_sd  **RIGHT**
+# io_requestor_0_status_zero3  **RIGHT**
+# io_requestor_0_status_sd_rv32  **RIGHT**
+# io_requestor_0_status_zero2  **RIGHT**
+# io_requestor_0_status_vm  **RIGHT**
+# io_requestor_0_status_zero1  **RIGHT**
+# io_requestor_0_status_mxr  **RIGHT**
+# io_requestor_0_status_pum  **RIGHT**
+# io_requestor_0_status_mprv  **RIGHT**
+# io_requestor_0_status_xs  **RIGHT**
+# io_requestor_0_status_fs  **RIGHT**
+# io_requestor_0_status_mpp  **RIGHT**
+# io_requestor_0_status_hpp  **RIGHT**
+# io_requestor_0_status_spp  **RIGHT**
+# io_requestor_0_status_mpie  **RIGHT**
+# io_requestor_0_status_hpie  **RIGHT**
+# io_requestor_0_status_spie  **RIGHT**
+# io_requestor_0_status_upie  **RIGHT**
+# io_requestor_0_status_mie  **RIGHT**
+# io_requestor_0_status_hie  **RIGHT**
+# io_requestor_0_status_sie  **RIGHT**
+# io_requestor_0_status_uie  **RIGHT**
+# ---------------requestor-1----------------
+# io_requestor_1_req_ready  ##ERROR##
+#  
+# io_requestor_1_resp_valid  **RIGHT**
+# io_requestor_1_resp_bits_pte_reserved_for_hardware  ##ERROR##
+# io_requestor_1_resp_bits_pte_ppn  ##ERROR##
+# io_requestor_1_resp_bits_pte_reserved_for_software  ##ERROR##
+# io_requestor_1_resp_bits_pte_d  ##ERROR##
+# io_requestor_1_resp_bits_pte_a  ##ERROR##
+# io_requestor_1_resp_bits_pte_g  ##ERROR##
+# io_requestor_1_resp_bits_pte_u  ##ERROR##
+# io_requestor_1_resp_bits_pte_x  ##ERROR##
+# io_requestor_1_resp_bits_pte_w  ##ERROR##
+# io_requestor_1_resp_bits_pte_r  ##ERROR##
+# io_requestor_1_resp_bits_pte_v  ##ERROR##
+#  
+# io_requestor_1_ptbr_asid  **RIGHT**
+# io_requestor_1_ptbr_ppn  **RIGHT**
+# io_requestor_1_invalidate  **RIGHT**
+#  
+# io_requestor_1_status_debug  **RIGHT**
+# io_requestor_1_status_isa  **RIGHT**
+# io_requestor_1_status_prv  **RIGHT**
+# io_requestor_1_status_sd  **RIGHT**
+# io_requestor_1_status_zero3  **RIGHT**
+# io_requestor_1_status_sd_rv32  **RIGHT**
+# io_requestor_1_status_zero2  **RIGHT**
+# io_requestor_1_status_vm  **RIGHT**
+# io_requestor_1_status_zero1  **RIGHT**
+# io_requestor_1_status_mxr  **RIGHT**
+# io_requestor_1_status_pum  **RIGHT**
+# io_requestor_1_status_mprv  **RIGHT**
+# io_requestor_1_status_xs  **RIGHT**
+# io_requestor_1_status_fs  **RIGHT**
+# io_requestor_1_status_mpp  **RIGHT**
+# io_requestor_1_status_hpp  **RIGHT**
+# io_requestor_1_status_spp  **RIGHT**
+# io_requestor_1_status_mpie  **RIGHT**
+# io_requestor_1_status_hpie  **RIGHT**
+# io_requestor_1_status_spie  **RIGHT**
+# io_requestor_1_status_upie  **RIGHT**
+# io_requestor_1_status_mie  **RIGHT**
+# io_requestor_1_status_hie  **RIGHT**
+# io_requestor_1_status_sie  **RIGHT**
+# io_requestor_1_status_uie  **RIGHT**
+# ---------------requestor-1----------------
+# -------------------mem--------------------
+# io_mem_req_valid  **RIGHT**
+# io_mem_req_bits_addr  ##ERROR##
+# io_mem_req_bits_tag  ##ERROR##
+# io_mem_req_bits_cmd  **RIGHT**
+# io_mem_req_bits_typ  ##ERROR##
+# io_mem_req_bits_phys  **RIGHT**
+# io_mem_req_bits_data  ##ERROR##
+# io_mem_s1_kill  **RIGHT**
+# io_mem_s1_data  ##ERROR##
+# io_mem_invalidate_lr  **RIGHT**
+# ==========================================
+restart
+# Loading work.testbench01(fast)
+# Loading work.PTW(fast)
+# Loading work.RRArbiter(fast)
+# Loading work.dpath_wire_path(fast)
+# Loading work.requestor_arb_wire_path(fast)
+# Loading work.mem_wire_path(fast)
+# Loading work.no_leaf_pte_check_unit(fast)
+# Loading work.permission_privilege_check_unit(fast)
+# Loading work.target_ppn_generate_unit(fast)
+# Loading work.index_address_generate_unit(fast)
+# Loading work.cache_hit_judge_unit(fast)
+# Loading work.access_dirty_check_unit(fast)
+# Loading work.replace_select_unit(fast)
+# Loading work.plru_unit(fast)
+# Loading work.cache_search_unit(fast)
+# Loading work.standard_PTW(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) PTW.v(539): [PCDPC] - Port size (28 or 28) does not match connection size (27) for port 'r_req_addr'. The port definition is at: target_ppn_generate_unit.v(4).
+#         Region: /testbench01/uutDUT/m1_target_ppn
+
+
+
+
+
+
+
+
+
+run 0.01ms
+# =====Test Begin=====
+# ==============compare_results=============
+# ---------------requestor-0----------------
+# io_requestor_0_req_ready  ##ERROR##
+#  
+# io_requestor_0_resp_valid  **RIGHT**
+# io_requestor_0_resp_bits_pte_reserved_for_hardware  ##ERROR##
+# io_requestor_0_resp_bits_pte_ppn  ##ERROR##
+# io_requestor_0_resp_bits_pte_reserved_for_software  ##ERROR##
+# io_requestor_0_resp_bits_pte_d  ##ERROR##
+# io_requestor_0_resp_bits_pte_a  ##ERROR##
+# io_requestor_0_resp_bits_pte_g  ##ERROR##
+# io_requestor_0_resp_bits_pte_u  ##ERROR##
+# io_requestor_0_resp_bits_pte_x  ##ERROR##
+# io_requestor_0_resp_bits_pte_w  ##ERROR##
+# io_requestor_0_resp_bits_pte_r  ##ERROR##
+# io_requestor_0_resp_bits_pte_v  ##ERROR##
+#  
+# io_requestor_0_ptbr_asid  **RIGHT**
+# io_requestor_0_ptbr_ppn  **RIGHT**
+# io_requestor_0_invalidate  **RIGHT**
+#  
+# io_requestor_0_status_debug  **RIGHT**
+# io_requestor_0_status_isa  **RIGHT**
+# io_requestor_0_status_prv  **RIGHT**
+# io_requestor_0_status_sd  **RIGHT**
+# io_requestor_0_status_zero3  **RIGHT**
+# io_requestor_0_status_sd_rv32  **RIGHT**
+# io_requestor_0_status_zero2  **RIGHT**
+# io_requestor_0_status_vm  **RIGHT**
+# io_requestor_0_status_zero1  **RIGHT**
+# io_requestor_0_status_mxr  **RIGHT**
+# io_requestor_0_status_pum  **RIGHT**
+# io_requestor_0_status_mprv  **RIGHT**
+# io_requestor_0_status_xs  **RIGHT**
+# io_requestor_0_status_fs  **RIGHT**
+# io_requestor_0_status_mpp  **RIGHT**
+# io_requestor_0_status_hpp  **RIGHT**
+# io_requestor_0_status_spp  **RIGHT**
+# io_requestor_0_status_mpie  **RIGHT**
+# io_requestor_0_status_hpie  **RIGHT**
+# io_requestor_0_status_spie  **RIGHT**
+# io_requestor_0_status_upie  **RIGHT**
+# io_requestor_0_status_mie  **RIGHT**
+# io_requestor_0_status_hie  **RIGHT**
+# io_requestor_0_status_sie  **RIGHT**
+# io_requestor_0_status_uie  **RIGHT**
+# ---------------requestor-1----------------
+# io_requestor_1_req_ready  ##ERROR##
+#  
+# io_requestor_1_resp_valid  **RIGHT**
+# io_requestor_1_resp_bits_pte_reserved_for_hardware  ##ERROR##
+# io_requestor_1_resp_bits_pte_ppn  ##ERROR##
+# io_requestor_1_resp_bits_pte_reserved_for_software  ##ERROR##
+# io_requestor_1_resp_bits_pte_d  ##ERROR##
+# io_requestor_1_resp_bits_pte_a  ##ERROR##
+# io_requestor_1_resp_bits_pte_g  ##ERROR##
+# io_requestor_1_resp_bits_pte_u  ##ERROR##
+# io_requestor_1_resp_bits_pte_x  ##ERROR##
+# io_requestor_1_resp_bits_pte_w  ##ERROR##
+# io_requestor_1_resp_bits_pte_r  ##ERROR##
+# io_requestor_1_resp_bits_pte_v  ##ERROR##
+#  
+# io_requestor_1_ptbr_asid  **RIGHT**
+# io_requestor_1_ptbr_ppn  **RIGHT**
+# io_requestor_1_invalidate  **RIGHT**
+#  
+# io_requestor_1_status_debug  **RIGHT**
+# io_requestor_1_status_isa  **RIGHT**
+# io_requestor_1_status_prv  **RIGHT**
+# io_requestor_1_status_sd  **RIGHT**
+# io_requestor_1_status_zero3  **RIGHT**
+# io_requestor_1_status_sd_rv32  **RIGHT**
+# io_requestor_1_status_zero2  **RIGHT**
+# io_requestor_1_status_vm  **RIGHT**
+# io_requestor_1_status_zero1  **RIGHT**
+# io_requestor_1_status_mxr  **RIGHT**
+# io_requestor_1_status_pum  **RIGHT**
+# io_requestor_1_status_mprv  **RIGHT**
+# io_requestor_1_status_xs  **RIGHT**
+# io_requestor_1_status_fs  **RIGHT**
+# io_requestor_1_status_mpp  **RIGHT**
+# io_requestor_1_status_hpp  **RIGHT**
+# io_requestor_1_status_spp  **RIGHT**
+# io_requestor_1_status_mpie  **RIGHT**
+# io_requestor_1_status_hpie  **RIGHT**
+# io_requestor_1_status_spie  **RIGHT**
+# io_requestor_1_status_upie  **RIGHT**
+# io_requestor_1_status_mie  **RIGHT**
+# io_requestor_1_status_hie  **RIGHT**
+# io_requestor_1_status_sie  **RIGHT**
+# io_requestor_1_status_uie  **RIGHT**
+# ---------------requestor-1----------------
+# -------------------mem--------------------
+# io_mem_req_valid  **RIGHT**
+# io_mem_req_bits_addr  ##ERROR##
+# io_mem_req_bits_tag  ##ERROR##
+# io_mem_req_bits_cmd  **RIGHT**
+# io_mem_req_bits_typ  ##ERROR##
+# io_mem_req_bits_phys  **RIGHT**
+# io_mem_req_bits_data  ##ERROR##
+# io_mem_s1_kill  **RIGHT**
+# io_mem_s1_data  ##ERROR##
+# io_mem_invalidate_lr  **RIGHT**
+# ==========================================

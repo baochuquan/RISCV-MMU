@@ -1,0 +1,12 @@
+library verilog;
+use verilog.vl_types.all;
+entity plru is
+    port(
+        hits            : in     vl_logic_vector(8 downto 0);
+        T_511           : in     vl_logic_vector(7 downto 0);
+        T_421           : in     vl_logic_vector(7 downto 0);
+        T_486           : in     vl_logic;
+        T_504           : out    vl_logic;
+        GEN_42          : out    vl_logic_vector(7 downto 0)
+    );
+end plru;

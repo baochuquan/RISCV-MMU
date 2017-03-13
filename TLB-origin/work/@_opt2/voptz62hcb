@@ -1,0 +1,25 @@
+library verilog;
+use verilog.vl_types.all;
+entity except_detec is
+    port(
+        io_req_bits_store: in     vl_logic;
+        io_ptw_status_pum: in     vl_logic;
+        u_array         : in     vl_logic_vector(7 downto 0);
+        sw_array        : in     vl_logic_vector(7 downto 0);
+        sx_array        : in     vl_logic_vector(7 downto 0);
+        sr_array        : in     vl_logic_vector(7 downto 0);
+        xr_array        : in     vl_logic_vector(7 downto 0);
+        dirty_array     : in     vl_logic_vector(7 downto 0);
+        io_ptw_status_mxr: in     vl_logic;
+        priv_s          : in     vl_logic;
+        prot_w          : in     vl_logic;
+        prot_r          : in     vl_logic;
+        prot_x          : in     vl_logic;
+        hits            : in     vl_logic_vector(8 downto 0);
+        bad_va          : in     vl_logic;
+        io_resp_xcpt_st : out    vl_logic;
+        io_resp_xcpt_if : out    vl_logic;
+        io_resp_xcpt_ld : out    vl_logic;
+        dirty_hit_check : out    vl_logic_vector(8 downto 0)
+    );
+end except_detec;

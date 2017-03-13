@@ -1,0 +1,329 @@
+# Reading C:/modeltech64_10.0a/tcl/vsim/pref.tcl 
+# //  ModelSim SE-64 10.0a Feb 17 2011 
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {testbench01.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module v_p_trans_arbi
+# 
+# Top level modules:
+# 	v_p_trans_arbi
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module v_addr_check
+# 
+# Top level modules:
+# 	v_addr_check
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module tlb_req_trans
+# 
+# Top level modules:
+# 	tlb_req_trans
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module tlb_replace
+# 
+# Top level modules:
+# 	tlb_replace
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module tlb_lookup
+# 
+# Top level modules:
+# 	tlb_lookup
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module tlb_attri_change
+# 
+# Top level modules:
+# 	tlb_attri_change
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module ppn_generate
+# 
+# Top level modules:
+# 	ppn_generate
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module plru
+# 
+# Top level modules:
+# 	plru
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module except_detec
+# 
+# Top level modules:
+# 	except_detec
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module cacheable_check
+# 
+# Top level modules:
+# 	cacheable_check
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module addr_prot_check
+# 
+# Top level modules:
+# 	addr_prot_check
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module TLB
+# 
+# Top level modules:
+# 	TLB
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module standard_TLB
+# 
+# Top level modules:
+# 	standard_TLB
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module testbench01
+# 
+# Top level modules:
+# 	testbench01
+# Model Technology ModelSim SE-64 vlog 10.0a Compiler 2011.02 Feb 17 2011
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work -voptargs=\"+acc\" -t 1ps work.testbench01 glbl 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "TLB".
+# Loading work.testbench01(fast)
+# Loading work.TLB(fast)
+# Loading work.tlb_attri_change(fast)
+# Loading work.tlb_lookup(fast)
+# Loading work.tlb_replace(fast)
+# Loading work.tlb_req_trans(fast)
+# Loading work.v_addr_check(fast)
+# Loading work.v_p_trans_arbi(fast)
+# Loading work.addr_prot_check(fast)
+# Loading work.cacheable_check(fast)
+# Loading work.except_detec(fast)
+# Loading work.ppn_generate(fast)
+# Loading work.plru(fast)
+# Loading work.standard_TLB(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) TLB.v(206): [PCDPC] - Port size (27 or 27) does not match connection size (28) for port 'io_req_bits_vpn'. The port definition is at: tlb_lookup.v(3).
+#         Region: /testbench01/uutDUT/instance_tlb_lookup
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# =====Test Begin=====
+run 100ms
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# -------------compare_results--------------
+# io_req_ready  **RIGHT**
+#  
+# io_resp_miss      **RIGHT**
+# io_resp_ppn       **RIGHT**
+# io_resp_xcpt_ld   **RIGHT**
+# io_resp_xcpt_st   **RIGHT**
+# io_resp_xcpt_if   **RIGHT**
+# io_resp_cacheable **RIGHT**
+#  
+# io_ptw_req_valid      **RIGHT**
+# io_ptw_req_bits_prv   **RIGHT**
+# io_ptw_req_bits_pum   **RIGHT**
+# io_ptw_req_bits_mxr   **RIGHT**
+# io_ptw_req_bits_addr  **RIGHT**
+# io_ptw_req_bits_store **RIGHT**
+# io_ptw_req_bits_fetch **RIGHT**
+# ------------------------------------------
+# =====Test End=====

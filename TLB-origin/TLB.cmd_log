@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/baochuquan/Desktop/RISCV-Verilog/TLB02/TLB-test01/TLB.xst" -ofn "C:/Users/baochuquan/Desktop/RISCV-Verilog/TLB02/TLB-test01/TLB.syr" 

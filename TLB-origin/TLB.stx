@@ -1,0 +1,78 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/baochuquan/Desktop/RISCV-Verilog/TLB02/TLB-test01/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/baochuquan/Desktop/RISCV-Verilog/TLB02/TLB-test01/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: TLB.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\v_p_trans_arbi.v" into library work
+Parsing module <v_p_trans_arbi>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\v_addr_check.v" into library work
+Parsing module <v_addr_check>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_req_trans.v" into library work
+Parsing module <tlb_req_trans>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_replace.v" into library work
+Parsing module <tlb_replace>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_lookup.v" into library work
+Parsing module <tlb_lookup>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_attri_change.v" into library work
+Parsing module <tlb_attri_change>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\ppn_generate.v" into library work
+Parsing module <ppn_generate>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\plru.v" into library work
+Parsing module <plru>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\except_detec.v" into library work
+Parsing module <except_detec>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\cacheable_check.v" into library work
+Parsing module <cacheable_check>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\addr_prot_check.v" into library work
+Parsing module <addr_prot_check>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" into library work
+Parsing module <TLB>.
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.46 secs
+ 
+--> 
+
+Total memory usage is 237088 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,306 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\baochuquan\Desktop\RISCV-Verilog\PTW-test01
+T_opt
+Z1 VkYa;QH_4G>bGZ55]X4YSE1
+Z2 04 11 4 work testbench01 fast 0
+Z3 04 4 4 work glbl fast 0
+Z4 =1-d8cb8a53db0c-58a014d4-2a1-d938
+Z5 o-quiet -auto_acc_if_foreign -work work -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip +acc
+Z6 n@_opt
+Z7 OL;O;10.0a;49
+Z8 dC:\Users\baochuquan\Desktop\RISCV-Verilog\PTW-test01
+vaccess_dirty_check_unit
+Z9 IfAimQmokMR;Ka@4z0ERWQ1
+Z10 V_KO<C=^I?9h4lJlPlo[i:3
+R8
+Z11 w1483434697
+Z12 8access_dirty_check_unit.v
+Z13 Faccess_dirty_check_unit.v
+L0 1
+Z14 OL;L;10.0a;49
+r1
+31
+Z15 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z16 !s100 L>UT10DSkccF_<Wk;i_[H0
+Z17 !s90 -reportprogress|300|access_dirty_check_unit.v|
+Z18 !s108 1486883842.391000
+Z19 !s107 access_dirty_check_unit.v|
+!s85 0
+vcache_hit_judge_unit
+Z20 IGHjl_6E0Li8Rh147[b9l83
+Z21 VFIeX5SL_CM[boghLEmfaF2
+R8
+Z22 w1483434579
+Z23 8cache_hit_judge_unit.v
+Z24 Fcache_hit_judge_unit.v
+L0 1
+R14
+r1
+31
+R15
+Z25 !s100 4]n0KzzSm^R6@eHfX`DK<3
+Z26 !s90 -reportprogress|300|cache_hit_judge_unit.v|
+Z27 !s108 1486883842.358000
+Z28 !s107 cache_hit_judge_unit.v|
+!s85 0
+vcache_search_unit
+Z29 ISUmSn0Z578gAD]El:Cm;a1
+Z30 V8d:][8`F^ZaGM]NIX1V8P0
+R8
+Z31 w1483446687
+Z32 8cache_search_unit.v
+Z33 Fcache_search_unit.v
+L0 1
+R14
+r1
+31
+R15
+Z34 !s100 ZL`GI_g8Y9MIeLd=zDKdV2
+Z35 !s90 -reportprogress|300|cache_search_unit.v|
+Z36 !s108 1486883842.325000
+Z37 !s107 cache_search_unit.v|
+!s85 0
+vdpath_wire_path
+Z38 I1eXh1zQ4l5AgeTfmoW]dI0
+Z39 V1WLc_ioXj2C2]ma0o`DIQ3
+R8
+Z40 w1484191349
+Z41 8dpath_wire_path.v
+Z42 Fdpath_wire_path.v
+L0 1
+R14
+r1
+31
+R15
+Z43 !s100 5G<WQE?BRl]oB6SmnFGbd0
+Z44 !s90 -reportprogress|300|dpath_wire_path.v|
+Z45 !s108 1486883842.290000
+Z46 !s107 dpath_wire_path.v|
+!s85 0
+vglbl
+Z47 IFO;UBj`VnzY[Ym4SWVVm;3
+Z48 VM[9mS]S:KA1i4VeCMX35[3
+R8
+Z49 w1354680638
+Z50 8C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v
+Z51 FC:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v
+L0 5
+R14
+r1
+31
+R15
+Z52 !s100 V<`KW`8LXe32mQ2Gdj1MB2
+Z53 !s90 -reportprogress|300|C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v|
+Z54 !s108 1486883842.551000
+Z55 !s107 C:/Xilinx/14.4/ISE_DS/ISE//verilog/src/glbl.v|
+!s85 0
+vindex_address_generate_unit
+Z56 IXaCnoC2]ikb18z@fn41<i2
+Z57 V41=APa=A_OGQCi4X9MG5i0
+R8
+Z58 w1483434149
+Z59 8index_address_generate_unit.v
+Z60 Findex_address_generate_unit.v
+L0 1
+R14
+r1
+31
+R15
+Z61 !s100 IClG90TbAP_On>S2nGZ>T0
+Z62 !s90 -reportprogress|300|index_address_generate_unit.v|
+Z63 !s108 1486883842.258000
+Z64 !s107 index_address_generate_unit.v|
+!s85 0
+vmem_wire_path
+Z65 IQeTWFW3=m>Gz_G3@I4fo73
+Z66 VN7;jO9X`SUJ3BHS?Z@IhI1
+R8
+Z67 w1484190910
+Z68 8mem_wire_path.v
+Z69 Fmem_wire_path.v
+L0 1
+R14
+r1
+31
+R15
+Z70 !s100 1g8JHWVmEB74gX=0LdV0[2
+Z71 !s90 -reportprogress|300|mem_wire_path.v|
+Z72 !s108 1486883842.228000
+Z73 !s107 mem_wire_path.v|
+!s85 0
+vno_leaf_pte_check_unit
+Z74 Ig@1GYmP>YF2UVb8zcYLzX3
+Z75 V^Z;mQL7HfKgbl^>mk6Ubj0
+R8
+Z76 w1483433149
+Z77 8no_leaf_pte_check_unit.v
+Z78 Fno_leaf_pte_check_unit.v
+L0 1
+R14
+r1
+31
+R15
+Z79 !s100 dJ^RRUG^`zId1?Yc[Qh1F2
+Z80 !s90 -reportprogress|300|no_leaf_pte_check_unit.v|
+Z81 !s108 1486883842.195000
+Z82 !s107 no_leaf_pte_check_unit.v|
+!s85 0
+vpermission_privilege_check_unit
+Z83 ISMh_A@Y2IzhUX]zUc^c=N3
+Z84 VS;fKif6>DN1:b72k0BFT50
+R8
+Z85 w1483433419
+Z86 8permission_privilege_check_unit.v
+Z87 Fpermission_privilege_check_unit.v
+L0 1
+R14
+r1
+31
+R15
+Z88 !s100 ZSCanaY8>Ka3mf`V8nnDJ3
+Z89 !s90 -reportprogress|300|permission_privilege_check_unit.v|
+Z90 !s108 1486883842.156000
+Z91 !s107 permission_privilege_check_unit.v|
+!s85 0
+vplru_unit
+Z92 IPbD`T;XEMX^fIH1^AC7=]0
+Z93 V_VV]5BNGLTMRP0TQoL1?F1
+R8
+Z94 w1486882939
+Z95 8plru_unit.v
+Z96 Fplru_unit.v
+L0 1
+R14
+r1
+31
+R15
+Z97 !s100 Z>56Sh9W7O??1hD9e7Lg23
+Z98 !s90 -reportprogress|300|plru_unit.v|
+Z99 !s108 1486883841.765000
+Z100 !s107 plru_unit.v|
+!s85 0
+vPTW
+Z101 IHPn4R9Q2PM[MJ12al`WLA2
+Z102 VHB2lQkN3::oHEXX0=Whjl3
+R8
+Z103 w1486885967
+Z104 8PTW.v
+Z105 FPTW.v
+L0 1
+R14
+r1
+31
+Z106 !s90 -reportprogress|300|PTW.v|
+R15
+Z107 n@p@t@w
+Z108 !s107 PTW.v|
+Z109 !s100 J^G`7363T>K3zl^PhYL]X1
+Z110 !s108 1486885980.148000
+!s85 0
+vreplace_select_unit
+Z111 IHYA@f^K>83G0F]^kVo7A`2
+Z112 V>2`1;2C<gH2^9NoekMzbM3
+R8
+Z113 w1484190622
+Z114 8replace_select_unit.v
+Z115 Freplace_select_unit.v
+L0 1
+R14
+r1
+31
+R15
+Z116 !s100 Cecc19bIPlbF3YUz3KMW<0
+Z117 !s90 -reportprogress|300|replace_select_unit.v|
+Z118 !s108 1486883841.733000
+Z119 !s107 replace_select_unit.v|
+!s85 0
+vrequestor_arb_wire_path
+Z120 I5LFd=T^9?ZhNl5PY4_Pd[2
+Z121 VM<2Rgei>5h3GdcmJhQ3R02
+R8
+Z122 w1483448459
+Z123 8requestor_arb_wire_path.v
+Z124 Frequestor_arb_wire_path.v
+L0 1
+R14
+r1
+31
+R15
+Z125 !s100 @OHh4d:T3^V7mZ9JhX[8m3
+Z126 !s90 -reportprogress|300|requestor_arb_wire_path.v|
+Z127 !s108 1486883841.700000
+Z128 !s107 requestor_arb_wire_path.v|
+!s85 0
+vRRArbiter
+Z129 I`DFa7VJR7Yn=H=TBBES`J0
+Z130 V]bn>Wf?@Y7Fn24CR5>BGl1
+R8
+Z131 w1486787631
+Z132 8RRArbiter.v
+Z133 FRRArbiter.v
+L0 1
+R14
+r1
+31
+R15
+Z134 n@r@r@arbiter
+Z135 !s100 X3V]LQ]Q7WM4<zFFL1Vlh3
+Z136 !s90 -reportprogress|300|RRArbiter.v|
+Z137 !s108 1486883841.664000
+Z138 !s107 RRArbiter.v|
+!s85 0
+vstandard_PTW
+Z139 ImjFk0PWidaG[b0`0YgEFb2
+Z140 V9Uj4SPfR2z[685BfbDDNI2
+R8
+Z141 w1486883795
+Z142 8standard_PTW.v
+Z143 Fstandard_PTW.v
+L0 1
+R14
+r1
+31
+R15
+Z144 nstandard_@p@t@w
+Z145 !s90 -reportprogress|300|standard_PTW.v|
+Z146 !s100 E_jLc1FS_T6RmnjBXKe:z3
+Z147 !s108 1486883842.425000
+Z148 !s107 standard_PTW.v|
+!s85 0
+vtarget_ppn_generate_unit
+Z149 IoS=nS>n99IeM[7c02f>aE0
+Z150 VOU=M6@BX=2Hj8N43<5iPL2
+R8
+Z151 w1483433740
+Z152 8target_ppn_generate_unit.v
+Z153 Ftarget_ppn_generate_unit.v
+L0 1
+R14
+r1
+31
+R15
+Z154 !s100 :FIf1_:Ihf[TTdCea[MWD0
+Z155 !s90 -reportprogress|300|target_ppn_generate_unit.v|
+Z156 !s108 1486883841.630000
+Z157 !s107 target_ppn_generate_unit.v|
+!s85 0
+vtestbench01
+Z158 Iclli]o;d88ZF7P1H<1zIf1
+Z159 VB?[8Y2i=lK3BcG8@d0AZT3
+R8
+Z160 w1486886089
+Z161 8testbench01.v
+Z162 Ftestbench01.v
+L0 25
+R14
+r1
+31
+Z163 !s90 -reportprogress|300|testbench01.v|
+R15
+Z164 !s107 testbench01.v|
+Z165 !s100 JVle8<2N9G2[8ceEAB=_n0
+Z166 !s108 1486886100.224000
+!s85 0

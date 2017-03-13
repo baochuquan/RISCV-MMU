@@ -1,0 +1,14 @@
+library verilog;
+use verilog.vl_types.all;
+entity addr_prot_check is
+    port(
+        io_ptw_resp_valid: in     vl_logic;
+        io_req_bits_vpn : in     vl_logic_vector(19 downto 0);
+        io_ptw_resp_bits_pte_ppn: in     vl_logic_vector(19 downto 0);
+        passthrough_ppn : out    vl_logic_vector(19 downto 0);
+        prot_r          : out    vl_logic;
+        prot_w          : out    vl_logic;
+        prot_x          : out    vl_logic;
+        cacheable_buf   : out    vl_logic
+    );
+end addr_prot_check;

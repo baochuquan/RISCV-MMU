@@ -1,0 +1,692 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: TLB.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TLB.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TLB"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : TLB
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\v_p_trans_arbi.v" into library work
+Parsing module <v_p_trans_arbi>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\v_addr_check.v" into library work
+Parsing module <v_addr_check>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_req_trans.v" into library work
+Parsing module <tlb_req_trans>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_replace.v" into library work
+Parsing module <tlb_replace>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_lookup.v" into library work
+Parsing module <tlb_lookup>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_attri_change.v" into library work
+Parsing module <tlb_attri_change>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\ppn_generate.v" into library work
+Parsing module <ppn_generate>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\plru.v" into library work
+Parsing module <plru>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\except_detec.v" into library work
+Parsing module <except_detec>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\cacheable_check.v" into library work
+Parsing module <cacheable_check>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\addr_prot_check.v" into library work
+Parsing module <addr_prot_check>.
+Analyzing Verilog file "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" into library work
+Parsing module <TLB>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <TLB>.
+
+Elaborating module <tlb_attri_change>.
+
+Elaborating module <tlb_lookup>.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_lookup.v" Line 41: Result of 9-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 190: Size mismatch in connection of port <io_req_bits_vpn>. Formal port size is 27-bit while actual signal size is 28-bit.
+
+Elaborating module <tlb_replace>.
+
+Elaborating module <tlb_req_trans>.
+
+Elaborating module <v_addr_check>.
+
+Elaborating module <v_p_trans_arbi>.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\v_p_trans_arbi.v" Line 15: Result of 2-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <addr_prot_check>.
+
+Elaborating module <cacheable_check>.
+
+Elaborating module <except_detec>.
+
+Elaborating module <ppn_generate>.
+
+Elaborating module <plru>.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\plru.v" Line 29: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 342: Result of 38-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 345: Result of 38-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 348: Result of 38-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 351: Result of 38-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 354: Result of 38-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 357: Result of 38-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 360: Result of 38-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 363: Result of 38-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 332: Assignment to r_req_vpn ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v" Line 279: Net <T_366> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TLB>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\TLB.v".
+WARNING:Xst:647 - Input <io_ptw_resp_bits_pte_reserved_for_hardware> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_resp_bits_pte_ppn<37:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_resp_bits_pte_reserved_for_software> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_ptbr_ppn> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_isa> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_zero3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_zero2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_vm<2:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_vm<4:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_zero1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_xs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_fs> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_hpp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_resp_bits_pte_a> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_resp_bits_pte_g> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_sd> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_sd_rv32> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_spp> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_mpie> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_hpie> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_spie> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_upie> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_mie> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_hie> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_sie> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <io_ptw_status_uie> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <T_366> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 20-bit register for signal <ppns_0>.
+    Found 20-bit register for signal <ppns_1>.
+    Found 20-bit register for signal <ppns_2>.
+    Found 20-bit register for signal <ppns_3>.
+    Found 20-bit register for signal <ppns_4>.
+    Found 20-bit register for signal <ppns_5>.
+    Found 20-bit register for signal <ppns_6>.
+    Found 20-bit register for signal <ppns_7>.
+    Found 34-bit register for signal <tags_0>.
+    Found 34-bit register for signal <tags_1>.
+    Found 34-bit register for signal <tags_2>.
+    Found 34-bit register for signal <tags_3>.
+    Found 34-bit register for signal <tags_4>.
+    Found 34-bit register for signal <tags_5>.
+    Found 34-bit register for signal <tags_6>.
+    Found 34-bit register for signal <tags_7>.
+    Found 8-bit register for signal <u_array>.
+    Found 8-bit register for signal <sw_array>.
+    Found 8-bit register for signal <sx_array>.
+    Found 8-bit register for signal <sr_array>.
+    Found 8-bit register for signal <xr_array>.
+    Found 8-bit register for signal <cash_array>.
+    Found 8-bit register for signal <dirty_array>.
+    Found 8-bit register for signal <T_421>.
+    Found 2-bit register for signal <state>.
+    Found 34-bit register for signal <r_refill_tag>.
+    Found 3-bit register for signal <r_refill_waddr>.
+    Found 1-bit register for signal <r_req_instruction>.
+    Found 1-bit register for signal <r_req_store>.
+    Found 8-bit register for signal <valid>.
+    Summary:
+	inferred 545 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <TLB> synthesized.
+
+Synthesizing Unit <tlb_attri_change>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_attri_change.v".
+    Found 8-bit shifter logical left for signal <GND_2_o_r_refill_waddr[2]_shift_left_0_OUT> created at line 59
+    Summary:
+	inferred  16 Multiplexer(s).
+	inferred   1 Combinational logic shifter(s).
+Unit <tlb_attri_change> synthesized.
+
+Synthesizing Unit <tlb_lookup>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_lookup.v".
+    Found 34-bit comparator equal for signal <tags_0[33]_lookup_tag[33]_equal_2_o> created at line 29
+    Found 34-bit comparator equal for signal <tags_1[33]_lookup_tag[33]_equal_3_o> created at line 30
+    Found 34-bit comparator equal for signal <tags_2[33]_lookup_tag[33]_equal_4_o> created at line 31
+    Found 34-bit comparator equal for signal <tags_3[33]_lookup_tag[33]_equal_5_o> created at line 32
+    Found 34-bit comparator equal for signal <tags_4[33]_lookup_tag[33]_equal_6_o> created at line 33
+    Found 34-bit comparator equal for signal <tags_5[33]_lookup_tag[33]_equal_7_o> created at line 34
+    Found 34-bit comparator equal for signal <tags_6[33]_lookup_tag[33]_equal_8_o> created at line 35
+    Found 34-bit comparator equal for signal <tags_7[33]_lookup_tag[33]_equal_9_o> created at line 36
+    Summary:
+	inferred   8 Comparator(s).
+Unit <tlb_lookup> synthesized.
+
+Synthesizing Unit <tlb_replace>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_replace.v".
+    Found 8-bit shifter logical right for signal <T_455> created at line 51
+    Found 8-bit shifter logical right for signal <T_458> created at line 54
+    Summary:
+	inferred   8 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <tlb_replace> synthesized.
+
+Synthesizing Unit <tlb_req_trans>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\tlb_req_trans.v".
+WARNING:Xst:647 - Input <r_refill_tag<33:27>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <tlb_req_trans> synthesized.
+
+Synthesizing Unit <v_addr_check>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\v_addr_check.v".
+    Found 1-bit comparator not equal for signal <n0000> created at line 7
+    Summary:
+	inferred   1 Comparator(s).
+Unit <v_addr_check> synthesized.
+
+Synthesizing Unit <v_p_trans_arbi>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\v_p_trans_arbi.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <v_p_trans_arbi> synthesized.
+
+Synthesizing Unit <addr_prot_check>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\addr_prot_check.v".
+    Found 32-bit comparator greater for signal <T_226[31]_GND_8_o_LessThan_5_o> created at line 32
+    Found 32-bit comparator greater for signal <T_226[31]_GND_8_o_LessThan_8_o> created at line 34
+    Found 32-bit comparator lessequal for signal <n0011> created at line 37
+    Found 32-bit comparator greater for signal <T_226[31]_GND_8_o_LessThan_11_o> created at line 37
+    Found 32-bit comparator lessequal for signal <n0016> created at line 40
+    Found 32-bit comparator greater for signal <T_226[31]_GND_8_o_LessThan_14_o> created at line 40
+    Found 32-bit comparator lessequal for signal <n0021> created at line 43
+    Found 32-bit comparator greater for signal <T_226[31]_PWR_8_o_LessThan_17_o> created at line 43
+    Summary:
+	inferred   8 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <addr_prot_check> synthesized.
+
+Synthesizing Unit <cacheable_check>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\cacheable_check.v".
+    Summary:
+	no macro.
+Unit <cacheable_check> synthesized.
+
+Synthesizing Unit <except_detec>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\except_detec.v".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <except_detec> synthesized.
+
+Synthesizing Unit <ppn_generate>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\ppn_generate.v".
+    Summary:
+	inferred   9 Multiplexer(s).
+Unit <ppn_generate> synthesized.
+
+Synthesizing Unit <plru>.
+    Related source file is "C:\Users\baochuquan\Desktop\RISCV-Verilog\TLB02\plru.v".
+WARNING:Xst:647 - Input <hits<8:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit shifter logical left for signal <T_528> created at line 19
+    Found 4-bit shifter logical left for signal <T_517> created at line 21
+    Summary:
+	inferred   3 Multiplexer(s).
+	inferred   2 Combinational logic shifter(s).
+Unit <plru> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 30
+ 1-bit register                                        : 2
+ 2-bit register                                        : 1
+ 20-bit register                                       : 8
+ 3-bit register                                        : 1
+ 34-bit register                                       : 9
+ 8-bit register                                        : 9
+# Comparators                                          : 17
+ 1-bit comparator not equal                            : 1
+ 32-bit comparator greater                             : 5
+ 32-bit comparator lessequal                           : 3
+ 34-bit comparator equal                               : 8
+# Multiplexers                                         : 45
+ 2-bit 2-to-1 multiplexer                              : 4
+ 20-bit 2-to-1 multiplexer                             : 10
+ 3-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 23
+ 9-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 5
+ 4-bit shifter logical left                            : 1
+ 8-bit shifter logical left                            : 2
+ 8-bit shifter logical right                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 545
+ Flip-Flops                                            : 545
+# Comparators                                          : 17
+ 1-bit comparator not equal                            : 1
+ 32-bit comparator greater                             : 5
+ 32-bit comparator lessequal                           : 3
+ 34-bit comparator equal                               : 8
+# Multiplexers                                         : 45
+ 2-bit 2-to-1 multiplexer                              : 4
+ 20-bit 2-to-1 multiplexer                             : 10
+ 3-bit 2-to-1 multiplexer                              : 7
+ 8-bit 2-to-1 multiplexer                              : 23
+ 9-bit 2-to-1 multiplexer                              : 1
+# Logic shifters                                       : 5
+ 4-bit shifter logical left                            : 1
+ 8-bit shifter logical left                            : 2
+ 8-bit shifter logical right                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <T_421_0> of sequential type is unconnected in block <TLB>.
+
+Optimizing unit <TLB> ...
+
+Optimizing unit <tlb_lookup> ...
+
+Optimizing unit <except_detec> ...
+
+Optimizing unit <tlb_attri_change> ...
+
+Optimizing unit <addr_prot_check> ...
+WARNING:Xst:2677 - Node <dirty_array_1> of sequential type is unconnected in block <TLB>.
+WARNING:Xst:2677 - Node <dirty_array_2> of sequential type is unconnected in block <TLB>.
+WARNING:Xst:2677 - Node <dirty_array_3> of sequential type is unconnected in block <TLB>.
+WARNING:Xst:2677 - Node <dirty_array_4> of sequential type is unconnected in block <TLB>.
+WARNING:Xst:2677 - Node <dirty_array_5> of sequential type is unconnected in block <TLB>.
+WARNING:Xst:2677 - Node <dirty_array_6> of sequential type is unconnected in block <TLB>.
+WARNING:Xst:2677 - Node <dirty_array_7> of sequential type is unconnected in block <TLB>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TLB, actual ratio is 15.
+FlipFlop state_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 538
+ Flip-Flops                                            : 538
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TLB.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 482
+#      GND                         : 1
+#      LUT2                        : 14
+#      LUT3                        : 29
+#      LUT4                        : 31
+#      LUT5                        : 53
+#      LUT6                        : 248
+#      MUXCY                       : 103
+#      MUXF7                       : 2
+#      VCC                         : 1
+# FlipFlops/Latches                : 538
+#      FD                          : 56
+#      FDE                         : 471
+#      FDR                         : 11
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 137
+#      IBUF                        : 77
+#      OBUF                        : 60
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             538  out of  11440     4%  
+ Number of Slice LUTs:                  375  out of   5720     6%  
+    Number used as Logic:               375  out of   5720     6%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    708
+   Number with an unused Flip Flop:     170  out of    708    24%  
+   Number with an unused LUT:           333  out of    708    47%  
+   Number of fully used LUT-FF pairs:   205  out of    708    28%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                         305
+ Number of bonded IOBs:                 138  out of    102   135% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 538   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.941ns (Maximum Frequency: 202.399MHz)
+   Minimum input arrival time before clock: 9.607ns
+   Maximum output required time after clock: 10.381ns
+   Maximum combinational path delay: 13.576ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.941ns (frequency: 202.399MHz)
+  Total number of paths / destination ports: 6224 / 849
+-------------------------------------------------------------------------
+Delay:               4.941ns (Levels of Logic = 16)
+  Source:            tags_0_2 (FF)
+  Destination:       T_421_4 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: tags_0_2 to T_421_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.808  tags_0_2 (tags_0_2)
+     LUT6:I3->O            1   0.205   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_lut<0> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<0> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<1> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<2> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<3> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<4> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<5> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<6> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<7> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<8> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<9> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<10> (instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<10>)
+     MUXCY:CI->O           4   0.019   0.000  instance_tlb_lookup/Mcompar_tags_0[33]_lookup_tag[33]_equal_2_o_cy<11> (instance_tlb_lookup/tags_0[33]_lookup_tag[33]_equal_2_o)
+     MUXCY:CI->O          28   0.213   1.463  instance_tlb_lookup/hitsVec_01_cy (hits<0>)
+     LUT6:I3->O            4   0.205   0.912  instance_plru/T_500[0]_INV_38_o1 (instance_plru/T_500[0]_INV_38_o)
+     LUT5:I2->O            1   0.205   0.000  instance_plru/Mmux_GEN_4251 (GEN_42<4>)
+     FD:D                      0.102          T_421_4
+    ----------------------------------------
+    Total                      4.941ns (1.758ns logic, 3.183ns route)
+                                       (35.6% logic, 64.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 7915 / 748
+-------------------------------------------------------------------------
+Offset:              9.607ns (Levels of Logic = 8)
+  Source:            io_ptw_resp_valid (PAD)
+  Destination:       xr_array_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: io_ptw_resp_valid to xr_array_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            70   1.222   1.927  io_ptw_resp_valid_IBUF (io_ptw_resp_valid_IBUF)
+     LUT4:I0->O            3   0.203   0.879  instance_addr_prot_check/T_274<1>211 (instance_addr_prot_check/T_274<1>21)
+     LUT4:I1->O            2   0.205   0.961  instance_addr_prot_check/T_274<2>13 (instance_addr_prot_check/T_274<2>1)
+     LUT5:I0->O            1   0.203   0.580  instance_addr_prot_check/T_274<1>2_SW0 (N22)
+     LUT5:I4->O            2   0.205   0.617  instance_addr_prot_check/T_274<1>2 (instance_addr_prot_check/T_274<1>2)
+     LUT5:I4->O           10   0.205   1.085  instance_addr_prot_check/T_274<0>1 (prot_r)
+     LUT5:I2->O            8   0.205   0.803  instance_tlb_attri_change/T_4071 (instance_tlb_attri_change/T_407)
+     LUT6:I5->O            1   0.205   0.000  instance_tlb_attri_change/Mmux_GEN_3921 (GEN_39<1>)
+     FD:D                      0.102          xr_array_1
+    ----------------------------------------
+    Total                      9.607ns (2.755ns logic, 6.852ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 9007 / 56
+-------------------------------------------------------------------------
+Offset:              10.381ns (Levels of Logic = 19)
+  Source:            tags_3_2 (FF)
+  Destination:       io_resp_xcpt_st (PAD)
+  Source Clock:      clock rising
+
+  Data Path: tags_3_2 to io_resp_xcpt_st
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.808  tags_3_2 (tags_3_2)
+     LUT6:I3->O            1   0.205   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_lut<0> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<0> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<1> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<2> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<3> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<4> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<5> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<6> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<7> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<8> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<9> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<10> (instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  instance_tlb_lookup/Mcompar_tags_3[33]_lookup_tag[33]_equal_5_o_cy<11> (instance_tlb_lookup/tags_3[33]_lookup_tag[33]_equal_5_o)
+     MUXCY:CI->O          28   0.213   1.599  instance_tlb_lookup/hitsVec_31_cy (hits<3>)
+     LUT6:I0->O            1   0.203   0.944  instance_except_detec/T_54025 (instance_except_detec/T_54025)
+     LUT6:I0->O            1   0.203   0.924  instance_except_detec/T_54026 (instance_except_detec/T_54026)
+     LUT6:I1->O            3   0.203   0.898  instance_except_detec/T_54027 (instance_except_detec/T_5402)
+     LUT4:I0->O            1   0.203   0.579  instance_except_detec/T_5454 (io_resp_xcpt_st_OBUF)
+     OBUF:I->O                 2.571          io_resp_xcpt_st_OBUF (io_resp_xcpt_st)
+    ----------------------------------------
+    Total                     10.381ns (4.629ns logic, 5.752ns route)
+                                       (44.6% logic, 55.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 9537 / 29
+-------------------------------------------------------------------------
+Delay:               13.576ns (Levels of Logic = 10)
+  Source:            io_ptw_resp_valid (PAD)
+  Destination:       io_resp_xcpt_ld (PAD)
+
+  Data Path: io_ptw_resp_valid to io_resp_xcpt_ld
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            70   1.222   1.927  io_ptw_resp_valid_IBUF (io_ptw_resp_valid_IBUF)
+     LUT4:I0->O            3   0.203   0.879  instance_addr_prot_check/T_274<1>211 (instance_addr_prot_check/T_274<1>21)
+     LUT4:I1->O            2   0.205   0.961  instance_addr_prot_check/T_274<2>13 (instance_addr_prot_check/T_274<2>1)
+     LUT5:I0->O            1   0.203   0.580  instance_addr_prot_check/T_274<1>2_SW0 (N22)
+     LUT5:I4->O            2   0.205   0.617  instance_addr_prot_check/T_274<1>2 (instance_addr_prot_check/T_274<1>2)
+     LUT5:I4->O           10   0.205   1.104  instance_addr_prot_check/T_274<0>1 (prot_r)
+     LUT5:I1->O            1   0.203   0.924  instance_except_detec/T_5402 (instance_except_detec/T_5401)
+     LUT5:I0->O            1   0.203   0.580  instance_except_detec/T_5403 (instance_except_detec/T_5403)
+     LUT6:I5->O            1   0.205   0.579  instance_except_detec/T_5409 (io_resp_xcpt_ld_OBUF)
+     OBUF:I->O                 2.571          io_resp_xcpt_ld_OBUF (io_resp_xcpt_ld)
+    ----------------------------------------
+    Total                     13.576ns (5.425ns logic, 8.151ns route)
+                                       (40.0% logic, 60.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    4.941|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.87 secs
+ 
+--> 
+
+Total memory usage is 294708 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   52 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

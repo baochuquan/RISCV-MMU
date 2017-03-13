@@ -1,0 +1,11 @@
+library verilog;
+use verilog.vl_types.all;
+entity tlb_replace is
+    port(
+        valid           : in     vl_logic_vector(7 downto 0);
+        T_421           : in     vl_logic_vector(7 downto 0);
+        T_504           : in     vl_logic;
+        repl_waddr      : out    vl_logic_vector(2 downto 0);
+        T_511           : out    vl_logic_vector(7 downto 0)
+    );
+end tlb_replace;
