@@ -1,3 +1,2 @@
-# Design of RISCV MMU
-- PTW-origin: the PTW of rocket MMU  
-- TLB-origin: the TLB of rocket MMU  
+使用Verilog重写RISC-V Rocket
+Chip的MMU结构。该结构内部包含一个I-TLB、一个D-TLB和一个PTW模块。以此对比Chisel自动生成的Verilog设计与手写的Verilog设计的差异。
